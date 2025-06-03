@@ -1,11 +1,11 @@
 // lesson-01_hello_world.cpp
 
 #include <iostream>
+using namespace std;
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
-    std::cout << "Thats my first C++ program!" << std::endl;
-    return 0;
-
+    cout << "Hello, World!" << std::endl;
+    cout << "That my first C++ code" << std::endl;
+    return 0;  
 }
 
