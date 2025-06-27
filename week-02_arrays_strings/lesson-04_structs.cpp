@@ -4,12 +4,18 @@
 
 using namespace std;
 
+
 // 1. Define a struct named 'Person'
 struct Person {
     string name;
     int age;
     float height;
 };
+
+
+void printPerson(const Person& p);
+
+
 
 int main() {
     // 2. Declare and initalize a Person object
