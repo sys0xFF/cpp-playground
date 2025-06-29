@@ -5,7 +5,7 @@ using namespace std;
 
 int main() {
     // 1. Declare and initialize an array
-    int numbers[5] = {10, 20, 30, 40, 50};
+    int numbers[] = {10, 20, 30, 40, 50};
 
     // 2. Accessing elements by index
     cout << "The first number is: " << numbers[0] << endl;
@@ -17,14 +17,14 @@ int main() {
 
     // 4. Loop through the array using a for loop
     cout << "All numbers in the array: ";
-    for (int i = 0; i < 5; i++) {
+    for (int i = 0; i < sizeof(numbers)/sizeof(numbers[0]); i++) {
         cout << numbers[i] << " ";
     }
     cout << endl;
 
     // 5. Calculate sum and average
     int sum = 0;
-    for (int i = 0; i < 5; i++) {
+    for (int i = 0; i < sizeof(numbers)/sizeof(numbers[0]); i++) {
         sum += numbers[i];
     }
     double average = static_cast<double>(sum) / 5;
