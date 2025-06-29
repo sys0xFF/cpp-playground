@@ -1,4 +1,26 @@
 // lesson-01_pointers.cpp
+
+// -------------------------------------------------------------
+// Stack vs Heap explanation:
+// 
+// - The stack is a region of memory that stores local variables 
+//   and function call information. It is fast and automatically 
+//   managed (variables are destroyed when they go out of scope).
+//
+// - The heap is a region of memory used for dynamic allocation. 
+//   You allocate memory manually (using 'new') and must also 
+//   free it manually (using 'delete'). The heap allows data 
+//   to persist beyond the scope of a function.
+//
+// Why use the heap?
+// - When you need large or dynamic data structures (like arrays 
+//   whose size isn't known at compile time).
+// - When you want the data to outlive the function where it was created.
+// 
+// In this lesson, demonstrate pointers that point to stack 
+// variables and pointers that point to heap-allocated memory.
+// -------------------------------------------------------------
+
 #include <iostream>
 
 using namespace std;
@@ -40,6 +62,6 @@ int main() {
     } else {
         cout << "Pointer is null, cannot deference" << endl;
     }
-    
+
     return 0;
 }
