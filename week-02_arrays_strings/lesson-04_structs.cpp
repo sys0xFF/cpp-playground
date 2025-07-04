@@ -10,6 +10,10 @@ struct Person {
     string name;
     int age;
     float height;
+
+    string getname() {
+        return name;
+    }
 };
 
 
